@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscripción Programa de Fidelidad</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="titulo">Inscripción Programa de Fidelidad</h1>
+
+        
+        <form id="formCliente" class="form-con-fondo">
+            <div class="grid">
+                <label>Tipo de identificación
+                    <select id="tipoIdentificacion"></select>
+                </label>
+
+                <label>Número de identificación
+                    <input id="numeroIdentificacion" maxlength="50" />
+                </label>
+
+                <label>Nombres
+                    <input id="nombres" maxlength="100" />
+                </label>
+
+                <label>Apellidos
+                    <input id="apellidos" maxlength="100" />
+                </label>
+
+                <label>Fecha de nacimiento
+                    <input type="date" id="fechaNacimiento" />
+                </label>
+
+                <label>Dirección
+                    <input id="direccion" maxlength="200" />
+                </label>
+
+                <label>País
+                    <select id="pais"></select>
+                </label>
+
+                <label>Departamento
+                    <select id="departamento" disabled></select>
+                </label>
+
+                <label>Ciudad
+                    <select id="ciudad" disabled></select>
+                </label>
+
+                <label>Marca
+                    <select id="marca"></select>
+                </label>
+            </div>
+
+            
+            <section id="galeriaMarcas" class="galeria-marcas"></section>
+
+            <button type="submit" id="btnGuardar">Inscribirme</button>
+        </form>
+    </main>
+
+    
+    <script src="./js/api.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
